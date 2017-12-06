@@ -111,7 +111,7 @@
             // label
             $r.ctx.fillStyle = "#ffffff";
 
-            $r.ctx.font = '12px Helvetica';
+            $r.ctx.font = '11px Helvetica';
             $r.ctx.fillText(label, 0, 23);
             $r.ctx.fillText(label, 0, 23);
 
