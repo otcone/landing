@@ -124,36 +124,36 @@
 
     ringer.init();
 
-    if (isMobile) {
-        return;
-    }
+    // if (isMobile) {
+    //     return;
+    // }
 
 
-    var $video = $('#video');
+    // var $video = $('#video');
 
-    function resize() {
+    // function resize() {
 
-        var W = document.documentElement.getBoundingClientRect().width || window.innerWidth;
-        var H = document.documentElement.getBoundingClientRect().height || window.innerHeight;
-        var w, h;
-        if ((H / W) > 0.563) {
-            h = H;
-            w = H / 0.563
-        } else {
-            W = w;
-            H = H * 0.563
-        }
+    //     var W = document.documentElement.getBoundingClientRect().width || window.innerWidth;
+    //     var H = document.documentElement.getBoundingClientRect().height || window.innerHeight;
+    //     var w, h;
+    //     if ((H / W) > 0.563) {
+    //         h = H;
+    //         w = H / 0.563
+    //     } else {
+    //         W = w;
+    //         H = H * 0.563
+    //     }
 
-        $video.attr({
-            width: Math.ceil(w),
-            height: Math.ceil(h)
-        })
+    //     $video.attr({
+    //         width: Math.ceil(w),
+    //         height: Math.ceil(h)
+    //     })
 
-    }
+    // }
 
-    setTimeout(function() {
-        $('.main-bg').addClass('noimg')
-    }, 1000);
-    resize();
-    $(window).on('resize', resize)
+    // setTimeout(function() {
+    //     $('.main-bg').addClass('noimg')
+    // }, 1000);
+    // resize();
+    // $(window).on('resize', resize)
 })();
